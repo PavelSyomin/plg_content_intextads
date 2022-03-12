@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <extension type="plugin" version="4.0" method="upgrade" group="content">
+        <name>plg_intext_ads</name>
+        <creationDate>March 2022</creationDate>
+        <author>Pavel Syomin</author>
+        <authorEmail>pas.ntg@gmail.com</authorEmail>
+        <authorUrl>https://uraloved.ru</authorUrl>
+        <copyright>Copyright (C) 2022 Pavel Syomin, All rights reserved.</copyright>
+        <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+        <version>1.0.0</version>
+        <description>PLG_CONTENT_INTEXT_ADS_DESC</description>
+         
+        <files>
+            <filename plugin="plg_intext_ads">plg_intext_ads.php</filename>
+            <filename>plg_intext_ads.xml</filename>
+        </files>
+        
+        <languages folder="administrator/language">
+            <language tag="en-GB">language/en-GB/en-GB.plg_intext_ads.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.plg_intext_ads.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.plg_intext_ads.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.plg_intext_ads.sys.ini</language>
+        </languages>
+    
+        <config>
+            <fields name="params">
+                <fieldset name="basic">
+                    <field
+                        name="blocks"
+                        type="text"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCKS_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                    />    
+                </fieldset>
+            </fields>
+        </config>
+    </extension>
