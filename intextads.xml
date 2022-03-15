@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <extension type="plugin" version="3.0" method="upgrade" group="content">
+        <name>PLG_CONTENT_INTEXTADS</name>
+        <creationDate>March 2022</creationDate>
+        <author>Pavel Syomin</author>
+        <authorEmail>pas.ntg@gmail.com</authorEmail>
+        <authorUrl>https://uraloved.ru</authorUrl>
+        <copyright>Copyright (C) 2022 Pavel Syomin, All rights reserved.</copyright>
+        <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+        <version>1.0.0</version>
+        <description>PLG_CONTENT_INTEXT_ADS_DESC</description>
+         
+        <files>
+            <folder>language</folder>
+            <filename plugin="intextads">intextads.php</filename>
+            <filename>intextads.xml</filename>
+        </files>
+        
+        <languages foler="language">
+            <language tag="en-GB">language/en-GB/en-GB.plg_content_intextads.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.plg_content_intextads.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_intextads.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_intextads.sys.ini</language>
+        </languages>
+    
+        <config>
+            <fields name="params">
+                <fieldset name="basic">
+                    <field
+                        name="block_1"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_1_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />    
+                    <field
+                        name="block_2"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_2_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />
+                    <field
+                        name="block_3"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_3_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />
+                    <field
+                        name="block_4"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_4_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />
+                    <field
+                        name="block_5"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_5_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />
+                </fieldset>
+            </fields>
+        </config>
+    </extension>

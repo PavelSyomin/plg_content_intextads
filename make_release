@@ -1,0 +1,5 @@
+#! /bin/sh
+
+zip -r plg_content_intextads.zip language/ intextads.php intextads.xml index.html LICENSE
+
+exit 0
