@@ -79,14 +79,17 @@ class plgContentIntextads extends CMSPlugin
             if ($count == $start_offset)
             {
                 $block = array_shift($blocks);
-                $block = $block . "\n";
+                $block = "<div class=\"intext-ad\">\n" . $block . "\n</div>\n";
                 $row->text = substr_replace($row->text, $block, $pos, 0);
                 $start_offset += $blocks_freq;
-                if (count($blocks) == 0)
+                $n_blocks--;
+                if ($n_blocks == 0)
                 {
                     break;
                 }
             }
-        }       
+        }
+        
+        $this->app->getDocument()->addStyleDeclaration('.intext-ad{margin-bottom: 1rem;}');     
     }
 }
