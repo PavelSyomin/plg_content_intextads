@@ -7,8 +7,8 @@
         <authorUrl>https://uraloved.ru</authorUrl>
         <copyright>Copyright (C) 2022 Pavel Syomin, All rights reserved.</copyright>
         <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
-        <version>1.1.0</version>
-        <description>PLG_CONTENT_INTEXT_ADS_DESC</description>
+        <version>1.2.0</version>
+        <description>PLG_CONTENT_INTEXTADS_DESC</description>
          
         <files>
             <folder>language</folder>
@@ -22,52 +22,88 @@
             <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_intextads.ini</language>
             <language tag="ru-RU">language/ru-RU/ru-RU.plg_content_intextads.sys.ini</language>
         </languages>
+        
+        <updateservers>
+            <server type="extension" priority="1" name="In-text Ads plugin updates">https://github.com/PavelSyomin/plg_content_intextads/raw/main/plg_content_intextads_update.xml
+            </server>
+        </updateservers>
     
         <config>
             <fields name="params">
                 <fieldset name="basic">
                     <field
-                        name="block_1"
+                        name="block1"
                         type="textarea"
                         rows="5"
-                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_1_LABEL"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK1_LABEL"
                         description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
                         default=""
                         filter="raw"
                     />    
                     <field
-                        name="block_2"
+                        name="block2"
                         type="textarea"
                         rows="5"
-                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_2_LABEL"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK2_LABEL"
                         description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
                         default=""
                         filter="raw"
                     />
                     <field
-                        name="block_3"
+                        name="block3"
                         type="textarea"
                         rows="5"
-                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_3_LABEL"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK3_LABEL"
                         description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
                         default=""
                         filter="raw"
                     />
                     <field
-                        name="block_4"
+                        name="block4"
                         type="textarea"
                         rows="5"
-                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_4_LABEL"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK4_LABEL"
                         description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
                         default=""
                         filter="raw"
                     />
                     <field
-                        name="block_5"
+                        name="block5"
                         type="textarea"
                         rows="5"
-                        label="PLG_CONTENT_INTEXT_ADS_BLOCK_5_LABEL"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCK5_LABEL"
                         description="PLG_CONTENT_INTEXT_ADS_BLOCKS_DESC"
+                        default=""
+                        filter="raw"
+                    />
+                    <field
+                        name="blocksClass"
+                        type="text"
+                        label="PLG_CONTENT_INTEXT_ADS_BLOCKS_CLASS_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_BLOCKS_CLASS_DESC"
+                        default="intext-ads"
+                        filter="raw"
+                    />
+                    <field
+                        name="startOffset"
+                        type="number"
+                        label="PLG_CONTENT_INTEXT_ADS_START_OFFSET_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_START_OFFSET_DESC"
+                        default="5"
+                    />
+                    <field
+                        name="endOffset"
+                        type="number"
+                        label="PLG_CONTENT_INTEXT_ADS_END_OFFSET_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_END_OFFSET_DESC"
+                        default="10"
+                    />
+                    <field
+                        name="css"
+                        type="textarea"
+                        rows="5"
+                        label="PLG_CONTENT_INTEXT_ADS_CSS_LABEL"
+                        description="PLG_CONTENT_INTEXT_ADS_CSS_DESC"
                         default=""
                         filter="raw"
                     />

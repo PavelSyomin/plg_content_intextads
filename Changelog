@@ -4,3 +4,8 @@ Initial release.
 1.1.0 - March 16, 2022
 Fix a bug with number of ads on a page.
 Add bottom margin to ad blocks.
+
+1.2.0 - May 10, 2022
+Add options to set blocks class, specify start and end offset, add custom CSS.
+Refactor code to fit Joomla guidelines.
+Add updater.
