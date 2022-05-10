@@ -90,7 +90,7 @@ class plgContentIntextads extends CMSPlugin
             return;
         }
         
-        // Add blocks after paragraphs with calculated position
+        // Add blocks using calculated start and frequency
         $pos = strpos($row->text, '<p');
         $count = 0;
         $blocksClass = $this->params->get('blocksClass', 'intext-ads');
